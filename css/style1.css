@@ -1,0 +1,552 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+.big {
+    display: flex;
+    flex-direction: row;
+
+    /* Kontener o pełnej wysokości dla elastycznych kontenerów */
+}
+
+
+.sidebar-header{                   
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 800;
+    padding: 20px;
+}
+
+
+    .middle-container {
+        flex: 1;
+        background-color: #f7f6f6;
+        
+        flex: 1;
+        /* overflow: scroll; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+.suggested-accounts {
+    flex: 1;
+    /* Kontener suggested-accounts będzie zajmował pozostałą przestrzeń */
+
+    width: 400px;
+}
+
+
+.imgPost {
+    /*width: 200px;*/
+    /*width: 200px;*/
+    /*margin-left: 200px;*/
+    margin-right: 200px;
+    /*height: 300px;*/
+    object-fit: cover;
+
+
+}
+
+.suggestions-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    row-gap: 50px;
+    column-gap: 50px;
+    padding-left: 0;
+    margin-left: 50px;
+    font-size: 20px;
+    margin-top: 100px;
+    font-weight: 700;
+}
+
+.suggestions-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.suggestions-list li img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.sidebar {
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+
+    
+        display: flex;
+        flex-direction: column;
+       
+        padding: 16px;
+    
+    
+}
+
+
+
+.card {
+    border: 1px solid rgba(0, 0, 0.1);
+    margin: 20px;
+    padding: 10px;
+    width: 600px;
+    background-color: #fff;
+    /* Dodaj tło karty, aby obraz nie był niewidoczny na białym tle */
+    border-right: 1px solid #ccc;
+    /* Obramowanie dla całego kontenera */
+    padding: 10px;
+    /* Dodatkowy wewnętrzny odstęp dla lepszego wyglądu */
+
+}
+
+
+
+.imgLogo {
+    border-radius: 50%;
+    /* Zaokrąglenie obrazu, aby uzyskać efekt koła */
+    width: 50px;
+    /* Szerokość obrazu logo */
+    height: 50px;
+    /* Wysokość obrazu logo */
+}
+
+.description {
+    margin-top: 10px;
+    /* Dodaj margines odstępu nad opisem */
+    font-size: 14px;
+    /* Ustaw odpowiedni rozmiar czcionki */
+    color: #333;
+    /* Ustaw odpowiedni kolor tekstu */
+}
+
+.user-avatar img {
+    width: 30px;
+    height: 30px;
+}
+
+.user {
+    display: flex;
+}
+
+.icons img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    
+   
+}
+
+.icons {
+    background-color: white;
+    width: 600px;
+   
+    border: 1px solid #ded7d7;
+    /* Obramowanie dla całego kontenera */
+    padding: 10px;
+    /* Dodatkowy wewnętrzny odstęp dla lepszego wyglądu */
+   
+    display: flex;
+    justify-content: center;
+
+}
+
+.icons-suggested{
+    background-color: white;
+  
+    margin-left: 20px;
+   
+    /* Obramowanie dla całego kontenera */
+    padding: 10px;
+    /* Dodatkowy wewnętrzny odstęp dla lepszego wyglądu */
+    margin-top: 20px;
+
+}
+
+.blackHeart {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.redHeart {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.sprachblasenSymbol {
+    width: 30px;
+    height: 30px;
+}
+
+.sendenSymbol{
+    width: 30px;
+    height: 30px;
+}
+
+.profil{
+    margin-top: 100px;
+}
+
+.card-headline{
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.card {
+    border: 1px solid rgb(232, 228, 228);
+    /*margin: 20px;*/
+    width: 600px;
+    background-color: #fff;
+    /*border: 1px solid #aba7a7;*/
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .content {
+    flex: 1; /* Rozciąga zawartość, aby zajęła dostępną przestrzeń */
+}
+
+
+input {
+    word-wrap: break-word; /* dla starszych przeglądarek */
+    overflow-wrap: break-word; /* dla nowszych przeglądarek */
+    padding: 20px;
+    border: none;
+}
+.card img {
+    max-width: 100%;
+    height: auto; /* Zapewnia proporcjonalne dopasowanie wysokości */
+}
+
+
+.icons img {
+    width: 64px;
+    height: 64px;
+    border-radius: 100px;
+    border: 3px solid rgb(223, 114, 132);
+    object-fit: cover;
+}
+
+
+.user-avatar img{
+    width: 64px;
+    height: 64px;
+    border-radius: 100px;
+    border: 3px solid rgb(223, 114, 132);
+    object-fit: cover;
+    margin-top: 10px;
+}
+button{
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: rgb(189, 189, 237);
+    cursor: pointer;
+
+    
+}
+
+
+
+.description {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+
+
+.username{
+    font-size: 40px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+@media (max-width: 1300px) {
+    .suggested-accounts {
+        display: none;
+    }
+
+  
+}
+
+
+
+
+
+
+@media (max-width: 970px) {
+    .big {
+        flex-direction: column-reverse; 
+    }
+
+  .suggestions-list{
+    flex-direction: row;
+  }
+  .suggestions-list li{
+    display: block;
+  }
+
+  /*.sidebar-header {
+    display: block;
+  }*/
+  .sidebar-header{
+    text-align: start;
+  }
+  .sidebar-header{
+    display: none;
+  }
+  .sidebar{
+    flex-direction: row;
+    justify-content: center;
+    padding: 16px;
+    /*display: block;*/
+  }
+  span{
+    display:none;
+  }
+}
+
+@media (max-width: 1200px){
+    .imgPost {
+      margin-right: 0px;
+    
+    }
+    .card{
+        margin: 0px;
+    }
+}
+
+@media (max-width: 650px) {
+    .icons{
+      max-width: 300px
+    }
+  .icons img{
+    width: 30px;
+    height: 30px;
+  }
+  .card{
+    max-width: 300px;
+  }
+  .suggestions-list {
+    column-gap: 0px;
+  }
+}
+
+@media (max-width: 400px){
+    .card{
+        max-width: 300px;
+      }
+}
+@media (max-width: 350px) {
+    .content {
+        max-width: 350px;
+    }
+
+    .card img{
+        max-width: 200px;
+        margin-left: 50px;
+    }
+    .description {
+         margin-top: 14px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .card-headline {
+         display: block; 
+        /* flex-direction: row; */
+        /* flex-direction: column; */
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+}
+
+@media(max-width: 340px){
+    button{
+        max-width: 200px;
+    }
+    .icons{
+        padding: 0px;
+    }
+    .card{
+        padding: 0px;
+    }
+}
+.user-name
+{
+    padding: 20px;
+    font-weight: 800;
+    font-size: 20px;
+}
+.follows{
+    padding: 10px;
+}
+
+.wrapWord{
+    
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        padding: 20px;
+        border: none;
+    
+}
+
+.wrapUser{
+    
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        padding: 20px;
+        border: none;
+    
+}
+
+
+/*-----------------------form----------------------------*/
+
+
+/* Form container */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items within the form */
+}
+
+/* Form labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    width: 100%; /* Take full width */
+    text-align: center; /* Center label text */
+}
+
+/* Inputs and Textarea */
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+    max-width: 400px; /* Optional: Limit max width */
+}
+
+/* Center text inside inputs */
+input[type="text"],
+select {
+    text-align: center;
+}
+
+/* File input style */
+input[type="file"] {
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Button styling */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+
+/*------------------------------------------------*/
+
+/* Style for the create-post-button container */
+.create-post-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Style for the button-link */
+.button-link {
+    display: inline-block;
+    background-color: #28a745; /* Green color for the button */
+    color: white; /* White text color */
+    padding: 12px 24px; /* Adjust padding for size */
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+}
+
+/* Hover effect for the button-link */
+.button-link:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Active state effect when the button is clicked */
+.button-link:active {
+    background-color: #1e7e34; /* Even darker green for active state */
+    transform: translateY(0); /* Return to normal position */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Less shadow on active */
+}
